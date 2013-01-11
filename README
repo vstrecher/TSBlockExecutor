@@ -1,0 +1,7 @@
+Thread Safe Block Executor
+
+(c) 2013 Eugene Valeyev
+
+The auxiliary class that allows to execute callbacks on the caller thread
+performing the main code on a separate thread.
+
