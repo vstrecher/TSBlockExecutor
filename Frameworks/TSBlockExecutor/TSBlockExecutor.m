@@ -30,7 +30,7 @@ typedef void (*dispatcher_t)(dispatch_queue_t, simpleBlock);
 #pragma mark - LifeCycle
 - (id)init
 {
-    dispatch_queue_t queue = dispatch_queue_create(NULL, DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t queue = dispatch_queue_create("tsblock_executor_queue", DISPATCH_QUEUE_SERIAL);
     self = [self initWithQueue:queue];
     dispatch_release(queue);
     return self;
