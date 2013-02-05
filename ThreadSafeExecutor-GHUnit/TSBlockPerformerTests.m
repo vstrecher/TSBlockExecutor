@@ -86,9 +86,11 @@
 }
 
 - (void)test03PerformSimultaneouslyFromDifferentQueuesAsync {
+    GHFail(@"Implement me!");
 }
 
 - (void)test04PerformSimultaneouslyFromDifferentQueuesSync {
+    GHFail(@"Implement me!");
 }
 
 #pragma mark - Helpers
