@@ -94,6 +94,11 @@ typedef void (*dispatcher_t)(dispatch_queue_t, simpleBlock);
     return result;
 }
 
+- (void)cleanThreadId:(NSString *)threadId
+{
+    [self.threadIds removeObjectForKey:threadId];
+}
+
 #pragma mark - Private Methods
 - (NSString *)generateThreadId
 {

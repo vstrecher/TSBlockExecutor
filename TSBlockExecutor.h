@@ -21,6 +21,7 @@ typedef void (^childBlock)();
 - (BOOL)performChildBlock:(childBlock)block onThreadId:(NSString *)threadId;
 - (BOOL)performMainBlock:(mainBlock)block waitUntilDone:(BOOL)wait;
 - (BOOL)performChildBlock:(childBlock)block onThreadId:(NSString *)threadId waitUntilDone:(BOOL)wait;
+- (void)cleanThreadId:(NSString *)threadId;
 
 @end
 
